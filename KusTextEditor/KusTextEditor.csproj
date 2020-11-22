@@ -11,6 +11,8 @@
     <RepositoryUrl>https://github.com/9034725985/KusTextEditor</RepositoryUrl>
     <RepositoryType>Application</RepositoryType>
     <PackageReleaseNotes>This is not meant for use in production.</PackageReleaseNotes>
+    <PackageIcon>heart_favourite_love_like_icon_159300.png</PackageIcon>
+    <ApplicationIcon>heart_favourite_love_like_icon_159300.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -21,5 +23,12 @@
     <PlatformTarget>x64</PlatformTarget>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\heart_favourite_love_like_icon_159300.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
