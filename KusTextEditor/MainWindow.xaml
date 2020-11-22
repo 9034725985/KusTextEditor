@@ -8,15 +8,42 @@
         Title="Kus Text Editor" Height="600" Width="800">
     <Grid>
         <StackPanel>
+            <ToolBarTray Background="White">
+                <ToolBar Band="1" BandIndex="1" ToolBarTray.IsLocked="True" >
+                    <Button MinWidth="80">
+                        File
+                    </Button>
+                    <Button MinWidth="80">
+                        Edit
+                    </Button>
+                    <Button MinWidth="80">
+                        View
+                    </Button>
+                    <Button MinWidth="80">
+                        Print
+                    </Button>
+                    <Button MinWidth="80">
+                        Share
+                    </Button>
+                    <Button MinWidth="80">
+                        Exit
+                    </Button>
+                    <Button MinWidth="80">
+                        Help
+                    </Button>
+                </ToolBar>
+            </ToolBarTray>
             <Label>
-                Welcome to Kus Text Editor!
+                Welcome to Kus Text Editor. Start typing your next epic. Be aware though: changes will NOT be saved!
             </Label>
             <TextBox
+                x:Name="MyDocument"
                 TextWrapping="WrapWithOverflow"
                 AcceptsReturn="True"
-                MinLines="12">
-                Start typing your next epic. Changes will NOT be saved!
+                MinLines="12"
+                KeyUp="MyDocument_KeyUp">
             </TextBox>
+            <Label Content="{Binding Path=MyString}"></Label>
         </StackPanel>
     </Grid>
 </Window>

@@ -20,9 +20,23 @@ namespace KusTextEditor
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string MyString { get; private set; }
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MyDocument_KeyUp(object sender, KeyEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                MyString = "";
+            }
+            else
+            {
+                MyString = textBox.Text;
+            }
         }
     }
 }
