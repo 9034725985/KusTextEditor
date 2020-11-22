@@ -1,3 +1,5 @@
+![.NET Core](https://github.com/9034725985/KusTextEditor/workflows/.NET%20Core/badge.svg)
+
 # Here be dragons!
 
 This is an experimental project.
