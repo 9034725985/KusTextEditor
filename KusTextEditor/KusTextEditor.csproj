@@ -2,8 +2,24 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+    <Authors>Kushal Hada</Authors>
+    <Description>This is an experiment in .NET core</Description>
+    <Copyright>AGPL-3.0-or-later</Copyright>
+    <RepositoryUrl>https://github.com/9034725985/KusTextEditor</RepositoryUrl>
+    <RepositoryType>Application</RepositoryType>
+    <PackageReleaseNotes>This is not meant for use in production.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
 </Project>
